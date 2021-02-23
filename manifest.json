@@ -9,8 +9,7 @@
     "content_scripts": [
         {
             "matches": [
-                "https://*/*",
-                "http://*/*"
+                "https://www.youtube.com/*"
             ],
             "js": [
                 "./src/youtubeSpeed.js"

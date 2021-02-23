@@ -30,12 +30,14 @@ body {
 }
 
 #root:hover, 
-#root:focus-within {
+#root:focus-within,
+#root.active {
     opacity: 1;
 }
 
 #root:hover + #logo, 
-#root:focus-within + #logo {
+#root:focus-within + #logo,
+#root.active + #logo {
     width: 30%;
     height: 30%;
     background-size: 50%;
