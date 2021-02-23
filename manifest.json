@@ -1,0 +1,26 @@
+{
+    "manifest_version": 2,
+    "name": "YouTube Speed",
+    "description": "",
+    "version": "1.0",
+    "browser_action": {
+        "default_popup": "./src/menu.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*/*",
+                "http://*/*"
+            ],
+            "js": [
+                "./src/youtubeSpeed.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "./src/youtube.png",
+        "48": "./src/youtube.png",
+        "128": "./src/youtube.png"
+    }
+}

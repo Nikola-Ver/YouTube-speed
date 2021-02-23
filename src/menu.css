@@ -1,0 +1,74 @@
+body {
+    background-color: rgb(41, 41, 41);
+    margin: 0;
+    width: 200px;
+    height: 80px;
+}
+
+#logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: url('youtube.png') no-repeat;
+    background-size: 25%;
+    background-position: center;
+    transition: 0.2s;
+}
+
+#root {
+    opacity: 0;
+    margin-top: 10px;
+    width: 200px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    transition: 0.2s;
+}
+
+#root:hover, 
+#root:focus-within {
+    opacity: 1;
+}
+
+#root:hover + #logo, 
+#root:focus-within + #logo {
+    width: 30%;
+    height: 30%;
+    background-size: 50%;
+    top: 5px;
+}
+
+.text {
+    font-size: 45px;
+    text-align: center;
+    color: #fcedd8;
+    font-family: "Niconne", cursive;
+    font-weight: 700;
+    cursor: pointer;
+    user-select: none;
+    outline: none;
+    text-shadow: 0px 0px 0px #eb452b, 
+                 0px 0px 0px #efa032, 
+                 0px 0px 0px #46b59b, 
+                 0px 0px 0px #017e7f, 
+                 0px 0px 0px #052939;
+    transition: 0.2s;
+}
+
+.text:nth-child(2) {
+    cursor: text;
+    user-select: auto;
+}
+
+.text:hover {
+    text-shadow: 3px 3px 0px #eb452b, 
+                 5px 5px 0px #efa032, 
+                 7px 7px 0px #46b59b, 
+                 9px 9px 0px #017e7f, 
+                 11px 11px 0px #052939;
+
+}
